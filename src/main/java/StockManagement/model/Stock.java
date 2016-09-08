@@ -10,20 +10,40 @@ import javax.persistence.Id;
 @Entity
 public class Stock {
 
+    public Stock() {
+    }
+
+    public Stock(int stockId, String stockName){
+        this.stockId = stockId;
+        this.stockName=stockName;
+    }
+
+
+
     @Id
     @Column
-    private String stockId;
+    private int stockId;
     @Column
     private String stockName;
     @Column
     private String stockValue;
+    @Column
+    private int stockQantity;
 
-    public String getStockId() {
+    public int getStockId() {
         return stockId;
     }
 
-    public void setStockId(String stockId) {
+    public void setStockId(int stockId) {
         this.stockId = stockId;
+    }
+
+    public int getStockQantity() {
+        return stockQantity;
+    }
+
+    public void setStockQantity(int stockQantity) {
+        this.stockQantity = stockQantity;
     }
 
     public String getStockName() {
@@ -41,4 +61,5 @@ public class Stock {
     public void setStockValue(String stockValue) {
         this.stockValue = stockValue;
     }
+
 }

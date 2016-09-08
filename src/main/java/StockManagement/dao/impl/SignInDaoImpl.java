@@ -25,7 +25,7 @@ public class SignInDaoImpl implements SignInDao {
         Session session = sessionFactory.openSession();
            boolean userFound = false;
 
-        String Sql_Query="from SignIn s where s.userName =? and s.password=?";
+        String Sql_Query="from SignUp s where s.userName =? and s.password=?";
 
         Query query = session.createQuery(Sql_Query);
 

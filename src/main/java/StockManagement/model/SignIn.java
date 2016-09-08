@@ -1,6 +1,7 @@
 package StockManagement.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Deepesh on 19/06/2016.
@@ -16,6 +17,9 @@ public class SignIn {
     private String userName;
     @Column
     private String password;
+    @OneToMany
+    @JoinColumn(name = "stockId")
+    private List<Stock> stocks;
 
     public int getUserId() {
         return userId;

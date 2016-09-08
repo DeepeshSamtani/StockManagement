@@ -5,22 +5,22 @@
   Time: 04:41
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <html>
 <head>
     <title>Title</title>
 </head>
-<body>
+<body bgcolor="#b3c6ff">
     <div>
         Home Page
     </div>
     <div>Welcome ,${userName}</div>
-    <div>
-    <a href="market">Market Watch</a>
-    <a href="portfolio">Portfolio</a>
-    <a href="fundTransfer">Fund Transfer</a>
-    <a href="trade">Trade</a>
-    <a href="help">Help</a>
+    <div align="center">
+    <a href="marketWatch">Market Watch</a><br>
+    <a href="portfolio">Portfolio</a><br>
+    <a href="fundTransfer">Fund Transfer</a><br>
+    <a href="trade">Trade</a><br>
+    <a href="help">Help</a><br>
     </div>
     <div>
         <a href="signIn">LogOut</a>

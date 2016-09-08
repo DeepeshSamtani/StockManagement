@@ -11,12 +11,12 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<body bgcolor="#b3c6ff">
     <div align="center">
         Sign In
     </div>
     <form:form method="POST" action="valid" commandName="signIn">
-        <table>
+        <table align="center">
             <tr>
                 <td>Username</td>
                 <td><form:input path="userName"/></td>

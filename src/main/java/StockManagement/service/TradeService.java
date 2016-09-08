@@ -1,7 +1,12 @@
 package StockManagement.service;
 
+import StockManagement.model.Stock;
+
+import java.util.List;
+
 /**
  * Created by Deepesh on 24/06/2016.
  */
-public class TradeService {
+public interface TradeService {
+    public List<Stock> ListStocks();
 }
