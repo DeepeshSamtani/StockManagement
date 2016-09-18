@@ -20,7 +20,7 @@ public class MarketWatchController {
 
     @RequestMapping("/marketWatch")
     public String showMarketWatchForm(Map<String,Object> map){
-        map.put("stock",new Stock());
+//        map.put("stock",new Stock());
         map.put("stockList",stockService.listStocks());
         return "marketWatch";
     }

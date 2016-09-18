@@ -15,13 +15,13 @@ import java.util.Map;
 @Controller
 public class TradeController {
 
-    @Autowired
+  /*  @Autowired
     private TradeService tradeService;
 
     @RequestMapping("/trade")
     public String ListStocks(Map<String ,Object> map){
         map.put("listStocks", new Stock());
         return "listStocks";
-    }
+    }*/
 
 }

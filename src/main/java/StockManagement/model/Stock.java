@@ -13,12 +13,11 @@ public class Stock {
     public Stock() {
     }
 
-    public Stock(int stockId, String stockName){
+    public Stock(int stockId, String stockName, String stockValue) {
         this.stockId = stockId;
-        this.stockName=stockName;
+        this.stockName = stockName;
+        this.stockValue = stockValue;
     }
-
-
 
     @Id
     @Column
@@ -27,8 +26,8 @@ public class Stock {
     private String stockName;
     @Column
     private String stockValue;
-    @Column
-    private int stockQantity;
+
+
 
     public int getStockId() {
         return stockId;
@@ -36,14 +35,6 @@ public class Stock {
 
     public void setStockId(int stockId) {
         this.stockId = stockId;
-    }
-
-    public int getStockQantity() {
-        return stockQantity;
-    }
-
-    public void setStockQantity(int stockQantity) {
-        this.stockQantity = stockQantity;
     }
 
     public String getStockName() {

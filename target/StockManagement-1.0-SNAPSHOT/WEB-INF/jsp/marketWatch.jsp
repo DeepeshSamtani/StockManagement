@@ -19,12 +19,14 @@
     <th>Stock Id</th>
     <th>Stock Name</th>
     <th>Stock Value</th>
+    <th>Stock Left</th>
 
     <c:forEach items="${stockList}" var="stock">
         <tr>
             <td>${stock.stockId}</td>
             <td>${stock.stockName}</td>
             <td>${stock.stockValue}</td>
+            <td>${stock.stockLeft}</td>
         </tr>
     </c:forEach>
 </table>

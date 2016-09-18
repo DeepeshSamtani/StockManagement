@@ -25,8 +25,6 @@ public class TradeDaoImpl implements TradeDao {
 
     @Override
     public List<Stock> ListStocks() {
-        Criteria criteria = sessionFactory.createCriteria(Stock.class).setProjection(Projections.projectionList().add(Projections.property("stockname"),"stockname")).setResultTransformer(Transformers.aliasToBean(Stock.class));
-        List<Stock> list = criteria.list();
-        return list;
+        return sessionFactory.getCurrentSession().createCriteria("from Stocks").list();
     }
 }
